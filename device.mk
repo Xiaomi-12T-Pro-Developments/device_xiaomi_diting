@@ -20,6 +20,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_cape/resourcemanager_waipio_mtp.xml \
     $(LOCAL_PATH)/configs/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
+# Esim
+PRODUCT_PACKAGES += \
+    XiaomiEuicc
+
 # Overlay
 PRODUCT_PACKAGES += \
     ApertureResDiting \
