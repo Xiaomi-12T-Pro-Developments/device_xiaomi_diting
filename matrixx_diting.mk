@@ -8,9 +8,9 @@
 $(call inherit-product, device/xiaomi/diting/device.mk)
 
 # Inherit from common lineage configuration
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_diting
+PRODUCT_NAME := matrixx_diting
 PRODUCT_DEVICE := diting
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
@@ -23,3 +23,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=diting_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+MATRIXX_MAINTAINER := Jezzay097
+TARGET_CUSTOM_UDFPS := true
+WITH_GMS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+WITH_GMS_COMMS_SUITE := true
+WITH_GMS_AICORE := true
+WITH_BCR := true
+TARGET_OPTIMIZED_DEXOPT := true
+PRODUCT_NO_CAMERA := true
