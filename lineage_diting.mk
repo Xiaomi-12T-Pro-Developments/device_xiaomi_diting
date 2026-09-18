@@ -32,3 +32,10 @@ TARGET_HAS_UDFPS := true
 WITH_GMS := true
 EVO_BUILD_TYPE := Unofficial
 TORCH_STR_SUPPORTED := true
+
+# Rendering Optimizations
+SURFACE_FLINGER_BOOST := true
+
+# SurfaceFlinger Refresh Rates
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,120)
