@@ -23,3 +23,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=diting_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+
+# Evox stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_NO_CAMERA := true
+TARGET_HAS_UDFPS := true
+WITH_GMS := true
+EVO_BUILD_TYPE := Unofficial
+TORCH_STR_SUPPORTED := true
